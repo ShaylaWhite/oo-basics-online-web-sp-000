@@ -1,18 +1,15 @@
 
 class Shoe
-  def initialize(name)
-    @name = name
+  attr_accessor :color, :size, :material, :condition
+  attr_reader :brand
+
+  def initialize(brand)
+    @brand = brand
   end
-  def name
-    @name
+
+  def cobble
+    self.condition = "new"
+    puts "Your shoe is as good as new!"
   end
-  def name=(new_name)
-    @name = new_name
-  end
-  def job
-    @job
-  end
-  def job=(new_job)
-    @job = new_job
-  end
+
 end
